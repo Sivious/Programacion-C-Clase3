@@ -19,12 +19,11 @@ int main (void)
 
 	genera_mensaje(file);
 
-	code = malloc(100); //comprobar que no devuelve null
+	code = malloc(101);
 	while(fgets(code, 100, file)) {
 		printf("%s\n", code);
 	}
 
 	free(code);
-	//fclose(file);
 	return 0;
 }
